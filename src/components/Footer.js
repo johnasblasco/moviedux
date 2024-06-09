@@ -1,38 +1,26 @@
-import react from 'react';
-import '../styles.css';
+import react from "react";
 
-export default function Footer(){
-      let hatdog ;
+export default function Footer() {
+  let hatdog;
 
-      switch(new Date().getDay()){
-            case 0: hatdog = 'sunday'
-            break;
-            case 1: hatdog = 'monday'
-            break;
-            case 2: hatdog = 'wednesday'
-            break;
-            default: hatdog = 'tite'
-            break;
-      }
-      
+  switch (new Date().getDay()) {
+    case 0:
+      hatdog = "sunday";
+      break;
+    case 1:
+      hatdog = "monday";
+      break;
+    case 2:
+      hatdog = "wednesday";
+      break;
+    default:
+      hatdog = "tite";
+      break;
+  }
 
-
-      return(
-            <footer className='footer'>
-                  <p className='footer-text'>
-                        &copy; sheesh bobo {hatdog}
-                        
-
-
-                 
-                        
-                        
-                  </p>
-
-            </footer>
-      );
-
+  return (
+    <footer className="footer">
+      <p className="footer-text">&copy; sheesh bobo {hatdog}</p>
+    </footer>
+  );
 }
-
-
-
